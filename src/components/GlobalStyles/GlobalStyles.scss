@@ -1,10 +1,16 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary: #f36c4e;
+$light: #f4f4f4;
+$font-family-sans-serif: 'Nunito', sans-serif;
+
 @import '~bootstrap/scss/bootstrap.scss';
+@import 'react-toastify/dist/ReactToastify.css';
 
 :root {
   --auth-bg-gradient-start: #9fd4fe;
   --auth-bg-gradient-end: #d0ceff;
+  --sunset-orange: #f36c4e;
 }
 
 * {
@@ -12,12 +18,77 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 0.9rem;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.6;
   text-rendering: optimizeSpeed;
+}
+
+input::placeholder {
+  color: #bbb !important;
+}
+
+.fs-7 {
+  font-size: 0.78rem !important;
+}
+
+.fs-8 {
+  font-size: 0.67rem !important;
+}
+
+.fs-9 {
+  font-size: 0.53rem !important;
+}
+
+.fs-10 {
+  font-size: 0.45rem !important;
+}
+
+/* Square Boxes */
+.square-9 {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.square-8 {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.square-7 {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.square-6 {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.square-5 {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.square-4 {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.square-3 {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.square-2 {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.square-1 {
+  width: 250px !important;
+  height: 250px !important;
 }

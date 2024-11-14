@@ -6,9 +6,13 @@ import styles from './AuthLayout.module.scss';
 function AuthLayout({ children }: { children: ReactNode }): JSX.Element {
     return (
         <div className={clsx(styles['wrapper'])}>
-            <div className={clsx('container')}>
-                {children}
-            </div>
+            <main className="container">
+                <div className="d-flex justify-content-center align-items-center" style={{
+                    minHeight: '100vh'
+                }}>
+                    {children}
+                </div>
+            </main>
         </div>
     );
 }

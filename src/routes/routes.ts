@@ -1,5 +1,5 @@
 // Layouts
-import { MainLayout, UploadLayout, BlankLayout, AuthLayout } from '~/layouts';
+import { MainLayout, UploadLayout, AuthLayout } from '~/layouts';
 import { Login } from '~/pages/auth/Login';
 import Register from '~/pages/auth/Register/Register';
 // Pages
@@ -15,11 +15,6 @@ type RouteType = {
 
 const publicRoutes: Array<RouteType> = [
   {
-    path: '/',
-    component: Home,
-    layout: MainLayout,
-  },
-  {
     path: '/login',
     component: Login,
     layout: AuthLayout,
@@ -28,6 +23,14 @@ const publicRoutes: Array<RouteType> = [
     path: '/register',
     component: Register,
     layout: AuthLayout,
+  },
+];
+
+const privateRoutes: Array<RouteType> = [
+  {
+    path: '/',
+    component: Home,
+    layout: MainLayout,
   },
   {
     path: '/profile',
@@ -40,7 +43,5 @@ const publicRoutes: Array<RouteType> = [
     layout: UploadLayout,
   },
 ];
-
-const privateRoutes: Array<RouteType> = [];
 
 export { publicRoutes, privateRoutes };
